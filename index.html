@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCompare - Find Your Perfect Insurance Plan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span>Health</span>Compare
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Compare Plans</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="phone">
+                <i class="fas fa-phone-alt"></i>
+                <span>1-800-HEALTH</span>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Find the Perfect Health Insurance Plan for You</h1>
+                <p>Compare top insurance providers and save up to 30% on your premium</p>
+                <div class="search-container">
+                    <input type="text" placeholder="Enter your ZIP code">
+                    <button>Get Started</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="comparison-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Compare Health Insurance Plans</h2>
+                <p>Select the best coverage for your needs and budget</p>
+            </div>
+
+            <div class="filter-options">
+                <div class="filter">
+                    <label for="coverage-type">Coverage Type</label>
+                    <select id="coverage-type">
+                        <option value="individual">Individual</option>
+                        <option value="family">Family</option>
+                        <option value="business">Business</option>
+                    </select>
+                </div>
+                <div class="filter">
+                    <label for="budget">Monthly Budget</label>
+                    <select id="budget">
+                        <option value="any">Any Budget</option>
+                        <option value="under200">Under $200</option>
+                        <option value="200-400">$200 - $400</option>
+                        <option value="over400">Over $400</option>
+                    </select>
+                </div>
+                <div class="filter">
+                    <label for="coverage-level">Coverage Level</label>
+                    <select id="coverage-level">
+                        <option value="any">Any Level</option>
+                        <option value="bronze">Bronze</option>
+                        <option value="silver">Silver</option>
+                        <option value="gold">Gold</option>
+                        <option value="platinum">Platinum</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="insurance-cards">
+                <!-- BlueCross BlueShield -->
+                <div class="insurance-card">
+                    <div class="card-header">
+                        <img src="/api/placeholder/150/60" alt="BlueCross BlueShield logo" class="company-logo">
+                        <div class="rating">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </span>
+                            <span class="rating-number">4.5</span>
+                        </div>
+                    </div>
+                    <div class="plan-name">BlueCross Platinum Plus</div>
+                    <div class="price">$349<span>/month</span></div>
+                    <div class="benefits-container">
+                        <div class="benefits-scroll">
+                            <div class="benefit">
+                                <i class="fas fa-check-circle"></i>
+                                <div class="benefit-details">
+                                    <h4>Network Size</h4>
+                                    <p>Extensive nationwide network with 95% physician coverage</p>
+                                </div>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-check-circle"></i>
+                                <div class="benefit-details">
+                                    <h4>Deductible</h4>
+                                    <p>$500 individual / $1,000 family</p>
+                                </div>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-check-circle"></i>
+                                <div class="benefit-details">
+                                    <h4>Prescription Coverage</h4>
+                                    <p>$0 generic / $25 brand-name copay</p>
+                                </div>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-check-circle"></i>
+                                <div class="benefit-details">
+                                    <h4>Telehealth</h4>
+                                    <p>Unlimited virtual visits with $0 copay</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="cta-button">Get This Plan</button>
+                    <a href="#" class="view-details">View Full Details</a>
+                </div>
+
+                <!-- Aetna -->
+                <div class="insurance-card">
+                    <div class="card-header">
+                        <img src="/api/placeholder/150/60" alt="Aetna logo" class="company-logo">
+                        <div class="rating">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                            <span class="rating-number">4.0</span>
+                        </div>
+                    </div>
+                    <div class="plan-name">Aetna Gold Value</div>
+                    <div class="price">$299<span>/month</span></div>
+                    <div class="benefits-container">
+                        <div class="benefits-scroll">
+                            <div class="benefit">
+                                <i class="fas fa-check-circle"></i>
+                                <div class="benefit-details">
+                                    <h4>Network Size</h4>
+                                    <p>Large network with 80% nationwide coverage</p>
+                                </div>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-check-circle"></i>
+                                <div class="benefit-details">
+                                    <h4>Deductible</h4>
+                                    <p>$1,000 individual / $2,000 family</p>
+                                </div>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-check-circle"></i>
+                                <div class="benefit-details">
+                                    <h4>Prescription Coverage</h4>
+                                    <p>$5 generic / $35 brand-name copay</p>
+                                </div>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-check-circle"></i>
+                                <div class="benefit-details">
+                                    <h4>Telehealth</h4>
+                                    <p>24/7 access with $10 copay</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="cta-button">Get This Plan</button>
+                    <a href="#" class="view-details">View Full Details</a>
+                </div>
+
+                <!-- UnitedHealthcare -->
+                <div class="insurance-card featured">
+                    <div class="featured-tag">Best Value</div>
+                    <div class="card-header">
+                        <img src="/api/placeholder/150/60" alt="UnitedHealthcare logo" class="company-logo">
+                        <div class="rating">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <span class="rating-number">4.8</span>
+                        </div>
+                    </div>
+                    <div class="plan-name">UnitedHealthcare Premium</div>
+                    <div class="price">$329<span>/month</span></div>
+                    <div class="benefits-container">
+                        <div class="benefits-scroll">
+                            <div class="benefit">
+                                <i class="fas fa-check-circle"></i>
+                                <div class="benefit-details">
+                                    <h4>Network Size</h4>
+                                    <p>Most extensive network with 98% coverage nationwide</p>
+                                </div>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-check-circle"></i>
+                                <div class="benefit-details">
+                                    <h4>Deductible</h4>
+                                    <p>$750 individual / $1,500 family</p>
+                                </div>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-check-circle"></i>
+                                <div class="benefit-details">
+                                    <h4>Prescription Coverage</h4>
+                                    <p>$0 generic / $20 brand-name copay</p>
+                                </div>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-check-circle"></i>
+                                <div class="benefit-details">
+                                    <h4>Telehealth</h4>
+                                    <p>Premium 24/7 access with $0 copay</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="cta-button">Get This Plan</button>
+                    <a href="#" class="view-details">View Full Details</a>
+                </div>
+
+                <!-- Cigna -->
+                <div class="insurance-card">
+                    <div class="card-header">
+                        <img src="/api/placeholder/150/60" alt="Cigna logo" class="company-logo">
+                        <div class="rating">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                            <span class="rating-number">4.2</span>
+                        </div>
+                    </div>
+                    <div class="plan-name">Cigna Silver Select</div>
+                    <div class="price">$249<span>/month</span></div>
+                    <div class="benefits-container">
+                        <div class="benefits-scroll">
+                            <div class="benefit">
+                                <i class="fas fa-check-circle"></i>
+                                <div class="benefit-details">
+                                    <h4>Network Size</h4>
+                                    <p>Medium network with 75% nationwide coverage</p>
+                                </div>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-check-circle"></i>
+                                <div class="benefit-details">
+                                    <h4>Deductible</h4>
+                                    <p>$2,000 individual / $4,000 family</p>
+                                </div>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-check-circle"></i>
+                                <div class="benefit-details">
+                                    <h4>Prescription Coverage</h4>
+                                    <p>$10 generic / $40 brand-name copay</p>
+                                </div>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-check-circle"></i>
+                                <div class="benefit-details">
+                                    <h4>Telehealth</h4>
+                                    <p>Basic virtual visits with $15 copay</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="cta-button">Get This Plan</button>
+                    <a href="#" class="view-details">View Full Details</a>
+                </div>
+
+                <!-- Humana -->
+                <div class="insurance-card">
+                    <div class="card-header">
+                        <img src="/api/placeholder/150/60" alt="Humana logo" class="company-logo">
+                        <div class="rating">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                            </span>
+                            <span class="rating-number">3.7</span>
+                        </div>
+                    </div>
+                    <div class="plan-name">Humana Bronze Basic</div>
+                    <div class="price">$199<span>/month</span></div>
+                    <div class="benefits-container">
+                        <div class="benefits-scroll">
+                            <div class="benefit">
+                                <i class="fas fa-check-circle"></i>
+                                <div class="benefit-details">
+                                    <h4>Network Size</h4>
+                                    <p>Regional network with 60% nationwide coverage</p>
+                                </div>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-check-circle"></i>
+                                <div class="benefit-details">
+                                    <h4>Deductible</h4>
+                                    <p>$3,500 individual / $7,000 family</p>
+                                </div>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-check-circle"></i>
+                                <div class="benefit-details">
+                                    <h4>Prescription Coverage</h4>
+                                    <p>$15 generic / $50 brand-name copay</p>
+                                </div>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-check-circle"></i>
+                                <div class="benefit-details">
+                                    <h4>Telehealth</h4>
+                                    <p>Limited hours with $20 copay</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="cta-button">Get This Plan</button>
+                    <a href="#" class="view-details">View Full Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose HealthCompare?</h2>
+                <p>We make finding the right health insurance simple and stress-free</p>
+            </div>
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Easy Comparison</h3>
+                    <p>Compare multiple insurance plans side-by-side to find the best option for your needs.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Save Money</h3>
+                    <p>Our customers save an average of 30% on their health insurance premiums.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Expert Guidance</h3>
+                    <p>Our licensed insurance advisors are available to help you make the right choice.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Trusted Partners</h3>
+                    <p>We only work with top-rated insurance companies with strong financial stability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+                <p>Join thousands of satisfied customers who found the perfect health insurance</p>
+            </div>
+            <div class="testimonials" id="testimonials-container">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"HealthCompare saved me over $200 per month on my family's health insurance. The comparison tool was easy to use and I found a better plan in less than 10 minutes!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/api/placeholder/60/60" alt="Sarah J." class="author-image">
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Los Angeles, CA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"As a small business owner, finding affordable health insurance for my employees was a challenge until I discovered HealthCompare. Their business plans are comprehensive and affordable."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/api/placeholder/60/60" alt="Michael R." class="author-image">
+                        <div class="author-info">
+                            <h4>Michael Rodriguez</h4>
+                            <p>Chicago, IL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"The customer service at HealthCompare is exceptional. Their advisor helped me understand my coverage options and find a plan that included my preferred doctors."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="/api/placeholder/60/60" alt="Emily T." class="author-image">
+                        <div class="author-info">
+                            <h4>Emily Thompson</h4>
+                            <p>Denver, CO</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button id="prev-testimonial" class="testimonial-control"><i class="fas fa-chevron-left"></i></button>
+                <button id="next-testimonial" class="testimonial-control"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Get answers to common questions about health insurance</p>
+            </div>
+            <div class="faqs">
+                <div class="faq">
+                    <div class="faq-question">
+                        <h3>How do I choose the right health insurance plan?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>When choosing a health insurance plan, consider your healthcare needs, budget, preferred doctors and hospitals, prescription medications, and coverage for specific services. Compare deductibles, premiums, copays, and out-of-pocket maximums to find the best value for your situation.</p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="faq-question">
+                        <h3>What's the difference between HMO, PPO, and EPO plans?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>HMO (Health Maintenance Organization) plans typically require you to stay within a network and get referrals from a primary care physician. PPO (Preferred Provider Organization) plans offer more flexibility to see specialists without referrals and some coverage for out-of-network care. EPO (Exclusive Provider Organization) plans combine elements of both, requiring you to stay in-network but not requiring referrals.</p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="faq-question">
+                        <h3>Can I change my health insurance plan at any time?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Generally, you can only change health insurance plans during the annual Open Enrollment Period or if you experience a qualifying life event (such as marriage, birth of a child, or loss of other coverage) that triggers a Special Enrollment Period. These periods allow you to enroll in or change your health insurance plan outside the standard enrollment window.</p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <div class="faq-question">
+                        <h3>Are preventive services covered at 100%?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Under the Affordable Care Act, most health insurance plans must cover preventive services at 100% with no cost-sharing when provided by an in-network provider. These services include annual check-ups, vaccinations, screenings, and certain counseling services. However, it's always best to verify coverage details with your specific insurance provider.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Find Your Perfect Health Insurance Plan?</h2>
+                <p>Enter your ZIP code to get started with personalized quotes</p>
+                <div class="search-container">
+                    <input type="text" placeholder="Enter your ZIP code">
+                    <button>Get Started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <span>Health</span>Compare
+                    </div>
+                    <p>HealthCompare is committed to helping individuals and families find affordable health insurance that meets their needs.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Insurance Guides</a></li>
+                        <li><a href="#">Insurance Glossary</a></li>
+                        <li><a href="#">Health Insurance Blog</a></li>
+                        <li><a href="#">ACA Information</a></li>
+                        <li><a href="#">Medicare Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">How It Works</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Partner With Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Insurance Way, Suite 400<br>New York, NY 10001</li>
+                        <li><i class="fas fa-phone-alt"></i> 1-800-HEALTH (1-800-432-5841)</li>
+                        <li><i class="fas fa-envelope"></i> support@healthcompare.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2025 HealthCompare. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Accessibility</a>
+                    <a href="#">Licenses</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
